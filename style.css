@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-image: url('assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 3em;
+    color: #ff6f91;
+    animation: fadeIn 2s ease;
+}
+
+.balloons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.balloon {
+    width: 100px;
+    margin: 0 10px;
+    animation: floatUp 4s infinite ease-in-out;
+}
+
+.message-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.surprise-btn {
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.surprise-btn:hover {
+    background-color: #ff4d6f;
+}
+
+.hidden {
+    display: none;
+}
+
+#surprise img.cake {
+    width: 200px;
+    margin: 20px 0;
+}
+
+.wish-input {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.send-wish-btn {
+    padding: 10px 20px;
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-wish-btn:hover {
+    background-color: #ff4d6f;
+}
+
+.wish-display {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

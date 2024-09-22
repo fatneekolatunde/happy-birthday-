@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">MET ULTAH, DIAN!</h1>
+        <div class="balloons">
+            <img src="assets/images/balloon1.png" class="balloon" alt="Balloon">
+            <img src="assets/images/balloon2.png" class="balloon" alt="Balloon">
+            <img src="assets/images/balloon3.png" class="balloon" alt="Balloon">
+        </div>
+        <div class="message-box">
+            <p class="message">semoga sering ketemu kucing lucu, timezone-nya dapet jackpot terus, bisa membahagiakan kedua orang tua dan keluarganya, POKOKNYA YANG TERBAIK DEHH</p>
+        </div>
+        <button class="surprise-btn">Click for a Surprise</button>
+        <audio id="birthday-music" loop>
+            <source src="assets/background-music.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <div id="surprise" class="hidden">
+            <img src="assets/images/cake.png" class="cake" alt="Cake">
+            <p class="surprise-text">Make a Wish!</p>
+            <!-- Chat bar untuk memasukkan birthday wish -->
+            <input type="text" id="wish-input" placeholder="Doanya apa nih?" class="wish-input">
+            <button id="send-wish-btn" class="send-wish-btn">Send</button>
+            <div id="wish-display" class="wish-display"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
